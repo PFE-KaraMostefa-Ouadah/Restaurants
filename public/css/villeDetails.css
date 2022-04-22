@@ -1,0 +1,47 @@
+:root {
+    --main-color: #da3743;
+}
+body {
+    background-image: url("../images/nabil-bachir-bouiadjra-hdGOmk16RLg-unsplash-min.jpg");
+    background-size: cover;
+}
+h1 {
+    margin: 0 0 30px!important;
+}
+.restaurants .container {
+    padding: 50px 20px;
+}
+.restaurants .container,
+.box {
+    background-color: white;
+}
+.container .nouvContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 10%;
+}
+.container .nouvContent img {
+	border-radius: 20px;
+	max-width: 100%;
+}
+.container .nouvContent .box {
+	position: relative;
+    width: fit-content;
+    height: 320px;
+    margin-bottom: 20px;
+    border: #d3d3d3 .5px solid;
+    border-radius: 0.25rem;
+    overflow: hidden;
+
+}
+.container .nouvContent .box .resdet {
+    padding-left: 10px;
+}
+.container .nouvContent .box .avis {
+    display: flex;
+    align-items: center;
+}
+.container .nouvContent .box .avis .evaluation {
+    margin-right: 10px;
+}

@@ -1,0 +1,128 @@
+ <!-- start header -->
+ <header>
+    <div class="container">
+            <div class="logo">Logo
+                <form class="recherche">
+                <img src="images/search_black_24dp.svg" alt="">
+                </form>
+            </div>           
+            <form class="recherche" id="re" style="display: none;">
+            <img src="images/search_black_24dp.svg" alt="">
+            </form>
+        <div class="menu">
+                <span class="material-icons">
+                    menu
+                </span>
+            <ul class="nrml">
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/TopRestaurants">Top Restaurants</a></li>
+                <li><a href="/topDestination">Villes</a></li>
+                <li><a href="/Nouveau">Nouveauté</a></li>
+                <li><a href="/map">Map</a></li>
+                <li><button class="login">Se Connecter</button></li>
+            </ul>
+            
+        </div>
+        
+    </div>
+    <div class="side">
+        <div>
+        <button class="close">
+            <img src="images/close_black_24dp.svg" alt="close">
+        </div>
+        <div class="bt">
+        <button class="login">Se Connecter</button>
+        <div class="user">
+            
+        </div>
+        </div>
+        <ul class="bt">
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/TopRestaurants">Top Restaurants</a></li>
+                <li><a href="/topDestination">Villes</a></li>
+                <li><a href="/Nouveau">Nouveauté</a></li>
+                <li><a href="/map">Map</a></li>
+        </ul>
+    </div>
+    
+</header>
+<div class="overlay"></div>
+<div class="account">
+    <div class="container acc">
+
+        <form class="n1" action="/" method="POST">
+
+            <button type="button" class="close">
+            <img src="images/close_white_24dp.svg" alt="">
+            </button>
+            <button class="closeMini" style="display:none ;">
+                    <img src="images/close_black_24dp.svg" alt="close">
+            </button>
+            <h1>Rejoignez-nous !</h1>
+
+            <div class="colLeft">
+                <label for="nom">Nom</label>
+                <div class="inp">
+                        <input id="nom" name="name" value="<%= user.nom %>" type="text" placeholder="Nom" required>
+                    </div>
+                </div>
+                <div class="colRight">
+                    <label for="preom">Preom</label>
+                    <div class="inp">
+                    <input id="preom" type="text" placeholder="Preom" name="prenom" value="<%= user.prenom %>"required>
+                    </div>
+                </div>
+                <label for="email">Adresse e-mail</label>
+                <div class="inp">
+                    <input  type="email" placeholder="Email" name="email" value="<%= user.email %>"required>
+                </div>
+                <label for="mdp">Mot de passe</label>
+                <div class="inp">
+                    <input  type="password" placeholder="Mot de passe" name="mdp" value="<%= user.mdp %>"required>
+            </div>
+            <button class="action" type="submit">S'inscrire</button>
+            <span class="quest">Vous avez déjà un compte</span>
+            <button class="cnct"> <span class="bold">Connectez-vous</span> en utilisant votre compte ______.</button>
+
+        </form>
+
+        <form class="n2" action="/" method="POST" style="display: none;" >
+                <button type="button" class="close">
+                <img src="images/close_white_24dp.svg" alt="">
+                </button>
+                <button class="closeMini" style="display:none ;">
+                        <img src="images/close_black_24dp.svg" alt="close">
+                </button>
+                <h1>Bienvenue !</h1>
+
+                <% if(messages.error) { %>
+                    <%= messages.error %>
+                <% } %>
+                <label for="email">Adresse e-mail</label>
+                <div class="inp">
+                    <input name = "logemail" type="email" placeholder="Email" value = "<%= user.email %>" required>
+                </div>
+                <label for="mdp">Mot de passe</label>
+                <div class="inp">
+                    <input name = "logpwd" type="password" placeholder="Mot de passe" value ="<%= user.mdp %>" required>
+                </div>
+                <button class="action">Se Connecter</button>
+                <span class="quest">Vous n'avez pas un compte?</span>
+                <button class="cnct"> <span class="bold">Inscrivez-vous</span> pour découvrir le meilleur de ______.</button>
+            </form>
+    </div>
+</div>
+<div class="search">
+    <div class="sr">
+            <button type="button" class="close">
+                    <img src="images/close_white_24dp.svg" alt="">
+            </button>
+        <form method="GET" action="/">
+            <img src="images/search_black_24dp.svg" alt="">
+            <input type="text">
+        </form>
+        <br>
+    </div>
+</div>
+<script src="/javaScript/menuu.js"></script>
+<!-- end header  -->

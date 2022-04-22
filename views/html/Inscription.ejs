@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("../partials/header.ejs") %>
+
+<body>
+    <%- include("../partials/menu.ejs") %>
+        <!-- start inscription -->
+        <div class="inscription">
+            <div class="container">
+                <h1>Inscrivez votre restaurant</h1>
+                <hr id="aa" style="margin-bottom: 70px;">
+                <div class="insContent">
+                    <h3>Coordonnées du restaurant</h3>
+                    <hr>
+                    <form>
+                        <label for="etab">Nom de l'établissement*</label>
+                        <input  id="etab" type="text">
+                        <label for="Adresse">Adresse</label>
+                        <input  id="Adresse" type="text">
+                        <label for="Ville">Ville*</label>
+                        <input  id="Ville" type="text">
+                        <label for="Téléphone">Téléphone*</label>
+                        <input  id="Téléphone" type="text">
+                        <div>
+                            <label for="">Le prix le moins cher pour vos plats : </label>
+                            <span id="rangeValue">0</span>
+                            <Input class="range" type="range" name="" value="0" min="0" max="10000" onchange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)" ontouchmove="rangeSlide(this.value)" ></Input>
+                        </div>
+                        <script type="text/javascript">
+                            function rangeSlide(value) {
+                                document.getElementById('rangeValue').innerHTML = value;
+                            }
+                        </script>
+                        
+                        
+                        <div class="file-input">
+                        <h3>Ajouter une photo de votre Restaurant :</h3>
+                        <input type="file" id="file" class="file">
+                        <label for="file">
+                            Select file
+                            <p class="file-name"></p>
+                        </label>
+                        </div>
+                        
+                        <h3>Coordonnées du contact</h3>
+                        <hr>
+                        
+                        <label for="Nom">Nom*</label>
+                        <input  id="Nom" type="text">
+                        <label for="Prenom">Prenom*</label>
+                        <input  id="Prenom" type="text">
+                        <label for="E-Mail">E-Mail*</label>
+                        <input  id="E-Mail" type="text">
+                        <label for="Téléphon">Téléphone*</label>
+                        <input  id="Téléphon" type="text">
+                        <input id="sub" type="submit" value = "Valider">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- end inscription -->
+        <!-- start footer  -->
+            <footer>
+                <div class="container">
+                    <div>
+                        <h4>Restaurateur</h4>
+                        <ul>
+                            <li><a href="#">Inscrire un Restaurant</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Contact</h4>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="/">Accueil</a></li>
+                            <li><a href="/TopRestaurants">Top Restaurants</a></li>
+                            <li><a href="/topDestination">Top Destinations</a></li>
+                            <li><a href="/Nouveau">Nouveau</a></li>
+                            <li><a href="/map">Map</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <span>© 2022 • Tous droits réservés •</span> 
+            </footer>
+    
+        <!-- End footer  -->
+
+    <script src="/javaScript/inscription.js"></script>
+</body>
+</html>

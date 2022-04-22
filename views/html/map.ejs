@@ -1,0 +1,25 @@
+<%- include("../partials/header.ejs") %>
+
+<body>
+    <%- include("../partials/menu.ejs") %>
+        <!-- start map  -->
+            <div class="map">
+                <div class="container" >
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14456127.762665678!2d-7.354397100905177!3d27.799670956114543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7e8a6a28037bd1%3A0x7140bee3abd7f8a2!2sAlgeria!5e0!3m2!1sen!2sdz!4v1649089882291!5m2!1sen!2sdz" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        <!-- end map  -->
+        <!-- Start restaurateur -->
+        <div class="restaurateur">
+            <h1>Vous êtes restaurateur ?</h1>
+            <p>Rejoignez-nous pour que votre restaurant soit visible auprès de tous les internautes de votre ville !</p>
+            <button>Rejoignez-nous !</button>
+    </div>
+    <!-- End restaurateur -->
+    <%- include("../partials/footer.ejs") %>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly"
+    async></script>
+    <script src="/javaScript/TopRestaurants.js"></script>
+</body>
+</html>

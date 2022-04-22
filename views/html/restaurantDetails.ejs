@@ -1,0 +1,202 @@
+<%- include("../partials/header.ejs") %>
+
+<body>
+
+    <%- include("../partials/menu.ejs") %>
+
+        <!-- start landing  -->
+        <div class="resLanding">
+        </div>
+        <div class="details">
+            <div class="container">
+                <div class="detContent">
+                    <div class="heading">
+                        <ul>
+                            <li class="active"><a href="#Aperçu">Aperçu</a></li>
+                            <li><a href="#Photos">Photos</a></li>
+                            <li><a href="#comment">Commentaires</a></li>
+                        </ul>
+                    </div>
+                    <h1 id="Aperçu">Name</h1>
+                    <hr style="margin-bottom: 20px;">
+                    <div class="avis">
+                        <div class="evaluation" style="display: inline; margin-right: 10px;">
+                            <img src="../images/star_border_black_24dp.svg" alt="">
+                            <img src="../images/star_border_black_24dp.svg" alt="">
+                            <img src="../images/star_border_black_24dp.svg" alt="">
+                            <img src="../images/star_border_black_24dp.svg" alt="">
+                            <img src="../images/star_border_black_24dp.svg" alt="">
+                        </div>
+                        <span class="moyenne">0.0</span>
+                        <span class="Commentaires"><img src="../images/mode_comment_black_24dp.svg" alt=""> 0.0</span>
+                        <span class="price"><img src="../images/monetization_on_black_24dp.svg" alt=""> 0.0</span>
+
+                    </div>
+                    <div class="topTags">
+                        <h4>Top Tags : </h4>
+                        <div>menu</div>
+                        <div>menu</div>
+                        <div>menu</div>
+                    </div>
+                    <div class="detail">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ducimus ullam magni eos odit velit, ipsa distinctio qui quo,
+                            nesciunt dolorem dolore aperiam recusandae. Saepe minima autem nulla unde iste maxime?</p>
+                    </div>
+                    
+                    <div class="userEval">
+                        <h2>Évaluer le Restaurant : </h2><hr>
+                        <h5>dites aux autres ce que vous pensez !</h5>
+                        <div class="bigeval">
+                            <div  class="image" style="background-image: url('../images/star_border_black_24dp.svg');background-size: contain;"></div>
+                            <div class="image" style="background-image: url('../images/star_border_black_24dp.svg');background-size: contain;"></div>
+                            <div  class="image" style="background-image: url('../images/star_border_black_24dp.svg');background-size: contain;"></div>
+                            <div  class="image" style="background-image: url('../images/star_border_black_24dp.svg');background-size: contain;"></div>
+                            <div  class="image" style="background-image: url('../images/star_border_black_24dp.svg');background-size: contain;"></div>
+                        </div>
+                        <button class="comenter">Écrire un commentaire</button>
+                    </div>
+                    <div class="over">
+                        <div class="ecrirComnt">
+                            <div class="personel">
+                                <img src="" alt="" width="50px" height="50px" style="border-radius: 50%; border: .5px solid black;">
+                                <p class="nom">name</p>
+                                <p style="color: #aaa;">Les avis sont publics et incluent le nom de votre compte.</p>
+                            </div>
+                            <div class="div">
+                                
+                            </div>
+                            <textarea  rows="10" placeholder="Décrivez votre expérience (facultatif)" style="width: 100%;" autofocus="true"></textarea>
+                            <div class="buttons">
+                                <button>Envoyer</button>
+                                <button class="annuler">Annuler</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Photos">
+                        <h3>n_Photos</h3>
+                        <hr style="margin-bottom: 15px;">
+                        <div class="respics">
+                            <!-- <button><img src="../images/1.jpg" alt=""></button> -->
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <h3>Menu</h3>
+                        <hr style="margin-bottom: 15px;">
+                        <p><img src="../images/launch_black_24dp.svg" alt="" style="margin-right: 10px;"> <a href="">Voir le menu sur le site du restaurant</a></p>
+                    </div>
+                    <div id="comment">
+                        <h3>Ce que les gens disent</h3>
+                        <hr style="margin-bottom: 20px;">
+                        <div class="cmnt">
+                            <div class="person">
+                                <img src="" alt="" width="50px" height="50px" style="border-radius: 50%; border: .5px solid black;">
+                                <p class="nom">name</p>
+                                <p class="wilaya">wilaya</p>
+                                <div class="eval">
+                                    <img src="../images/mode_comment_black_24dp.svg" alt="" width="20px" height= "20px">
+                                    <span class="number">n</span> Avis
+                                </div>
+                            </div>
+                            <div class="comntContent">
+                                    <div class="midl">
+                                            <div class="evaluation" style="display: inline;">
+                                                    <img src="../images/star_border_black_24dp.svg" alt="">
+                                                    <img src="../images/star_border_black_24dp.svg" alt="">
+                                                    <img src="../images/star_border_black_24dp.svg" alt="">
+                                                    <img src="../images/star_border_black_24dp.svg" alt="">
+                                                    <img src="../images/star_border_black_24dp.svg" alt="">
+                                            </div> 
+                                                <p class="date">publié il y a N jours</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora veniam reiciendis assumenda a </p>
+                            </div>
+                        </div>
+                        <hr style="width: 90%; text-align: center; margin: 10px auto 20px;">
+                        <div class="cmnt">
+                            <div class="person">
+                                <img src="" alt="" width="50px" height="50px" style="border-radius: 50%; border: .5px solid black;">
+                                <p class="nom">name</p>
+                                <p class="wilaya">wilaya</p>
+                                <div class="eval">
+                                    <img src="../images/mode_comment_black_24dp.svg" alt="" width="20px" height= "20px">
+                                    <span class="number">n</span> Avis
+                                </div>
+                            </div>
+                            <div class="comntContent">
+                                    <div class="midl">
+                                            <div class="evaluation" style="display: inline;">
+                                                    <img src="../images/star_border_black_24dp.svg" alt="">
+                                                    <img src="../images/star_border_black_24dp.svg" alt="">
+                                                    <img src="../images/star_border_black_24dp.svg" alt="">
+                                                    <img src="../images/star_border_black_24dp.svg" alt="">
+                                                    <img src="../images/star_border_black_24dp.svg" alt="">
+                                                </div> 
+                                                <p class="date">publié il y a N jours</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora veniam reiciendis assumenda a </p>
+                            </div>
+                        </div>
+                        <hr style="width: 90%; text-align: center; margin: 10px auto 20px;">
+                        <div class="cmnt">
+                            <div class="person">
+                                <img src="" alt="" width="50px" height="50px" style="border-radius: 50%; border: .5px solid black;">
+                                <p class="nom">name</p>
+                                <p class="wilaya">wilaya</p>
+                                <div class="eval">
+                                    <img src="../images/mode_comment_black_24dp.svg" alt="" width="20px" height= "20px">
+                                    <span class="number">n</span> Avis
+                                </div>
+                            </div>
+                            <div class="comntContent">
+                                    <div class="midl">
+                                            <div class="evaluation" style="display: inline;">
+                                                    <img src="../images/star_border_black_24dp.svg" alt="">
+                                                    <img src="../images/star_border_black_24dp.svg" alt="">
+                                                    <img src="../images/star_border_black_24dp.svg" alt="">
+                                                    <img src="../images/star_border_black_24dp.svg" alt="">
+                                                    <img src="../images/star_border_black_24dp.svg" alt="">
+                                                </div> 
+                                                <p class="date">publié il y a N jours</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora veniam reiciendis assumenda a </p>
+                            </div>
+                        </div>
+                        <hr style="width: 90%; text-align: center; margin: 10px auto 20px;">
+                        <div class="cmnt">
+                            <div class="person">
+                                <img src="" alt="" width="50px" height="50px" style="border-radius: 50%; border: .5px solid black;">
+                                <p class="nom">name</p>
+                                <p class="wilaya">wilaya</p>
+                                <div class="eval">
+                                    <img src="../images/mode_comment_black_24dp.svg" alt="" width="20px" height= "20px">
+                                    <span class="number">n</span> Avis
+                                </div>
+                            </div>
+                            <div class="comntContent">
+                                    <div class="midl">
+                                            <div class="evaluation" style="display: inline;">
+                                                    <img src="../images/star_border_black_24dp.svg" alt="">
+                                                    <img src="../images/star_border_black_24dp.svg" alt="">
+                                                    <img src="../images/star_border_black_24dp.svg" alt="">
+                                                    <img src="../images/star_border_black_24dp.svg" alt="">
+                                                    <img src="../images/star_border_black_24dp.svg" alt="">
+                                                </div> 
+                                                <p class="date">publié il y a N jours</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora veniam reiciendis assumenda a </p>
+                            </div>
+                        </div>
+                        <div class="content"><a href="tousComment">Voir tous les commentaires</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end landing  -->
+
+            <%- include("../partials/footer.ejs") %>
+
+
+    <script src="/javaScript/../javaScript/restaurantDetails.js"></script>
+</body>
+</html>

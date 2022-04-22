@@ -1,0 +1,100 @@
+:root {
+    --main-color: #da3743;
+}
+.best .container {
+    background-color: white;
+}
+.best .hed {
+    display: flex;
+    padding: 50px 0;
+}
+.best .title {
+    margin-left: 30px;
+}
+/* start rank  */
+    .rank .bx {
+        display: flex;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        padding-bottom: 30px;
+    }
+    .rank .bx:last-of-type {
+        margin-bottom: 0;
+        padding-bottom: 80px;
+    }
+    .rank .bximg {
+        float: left;
+        margin-right: 50px;
+    }
+    .rank .bxdet {
+        float: right;
+    }
+    .rank a {
+        text-decoration: none;
+        color: black;
+    }
+    .rank h4 {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    .rank .evaluation {
+        vertical-align: middle; 
+    }
+    .rank .evaluation p {
+        display: inline;
+    }
+    .rank .tags {
+        display: flex;
+        align-items: center;
+    }
+    .rank .tags div {
+        width: 60px;
+        height: 35px;
+        color: white;
+        background-color: var(--main-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        border-radius: 0.25rem;
+        margin: 10px !important;
+        cursor: pointer;
+    }
+    .rank a.more{
+        color: var(--main-color);
+    }
+    hr:last-of-type {
+        display: none;
+    }
+    @media (max-width: 992px) {
+        .rank .bx {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .rank .bx .bximg {
+            max-width: 991px;
+            justify-content: center;
+        }
+    }
+    @media (max-width: 767px) {
+        h1 {
+            font-size: 25px;
+        }
+        .rank .bx {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+        .rank .bx .bximg {
+            margin: 0;
+        }
+        .rank .bx img {
+            max-width: 320px;
+            margin-left: auto;
+        }
+        .rank .bx .tags{
+            justify-content: center;
+        }
+    }
+/* End rank  */

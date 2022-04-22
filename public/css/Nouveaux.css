@@ -1,0 +1,49 @@
+:root {
+    --main-color: #da3743;
+}
+
+.container .nouvContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 10%;
+}
+.container .nouvContent img {
+	border-radius: 20px;
+	max-width: 100%;
+}
+.container .nouvContent .box {
+	position: relative;
+    width: fit-content;
+    height: 320px;
+    margin-bottom: 20px;
+    border: #d3d3d3 .5px solid;
+    border-radius: 0.25rem;
+    overflow: hidden;
+
+}
+.container .nouvContent .box::before {
+    content: "Nouveau";
+    position: absolute;
+    top: 5%;
+    left: -11%;
+    width: 117px;
+    height: 25px;
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
+    transform: rotate(-45deg);
+    font-size: 13px;
+}
+.container .nouvContent .box .resdet {
+    padding-left: 10px;
+}
+.container .nouvContent .box .avis {
+    display: flex;
+    align-items: center;
+}
+.container .nouvContent .box .avis .evaluation {
+    margin-right: 10px;
+}
